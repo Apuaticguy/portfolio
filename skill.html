@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills - Ivan Luwongsupakit's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="navbar">
+        <nav>
+            <ul>
+                <li><a href="main.html">Home</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="skill.html">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="skills-section" id="skills">
+        <h2 style="margin-top: 70px;">My Skills</h2>
+        <div class="skills-container">
+            <!-- Coding Block -->
+            <div class="skill-block">
+                <h3>Coding</h3>
+                <div class="skill-subtopic">
+                    <button class="skill-button" onclick="toggleDetails('c-details')">C Language</button>
+                    <div id="c-details" class="skill-details">
+                        <h4 style="font-family: 'Roboto', sans-serif;">Science Project: Automatic Curtains</h4>
+                        <p style="font-family: 'Roboto', sans-serif;">A science project that me and my friends made, It was a self-opening and closing curtain that would detect the amount of sunlight and open or close accordingly</p>
+                        <img src="Pictures/Scipro.jpg" alt="Automatic Curtains Project">
+                    </div>
+                </div>
+                <div class="skill-subtopic">
+                    <button class="skill-button" onclick="toggleDetails('python-details')">Python</button>
+                    <div id="python-details" class="skill-details">
+                        <h4 style="font-family: 'Roboto', sans-serif;">Pong Game</h4>
+                        <p style="font-family: 'Roboto', sans-serif;">A recreation of the classic Pong game, coded in Python, created in collaboration with two friends</p>
+                        <img src="Pictures/Pong.jpg" alt="Pong Game Project">
+                    </div>
+                </div>
+                <div class="skill-subtopic">
+                    <button class="skill-button" onclick="toggleDetails('html-details')">HTML</button>
+                    <div id="html-details" class="skill-details">
+                        <h4 style="font-family: 'Roboto', sans-serif;">Portfolio Website</h4>
+                        <p style="font-family: 'Roboto', sans-serif;">The portfolio website currently being developed to showcase skills and projects</p>
+                        <img src="Pictures/Web.PNG" alt="Portfolio Website">
+                    </div>
+                </div>
+            </div>
+
+            <!-- CSR/Leadership Block -->
+            <div class="skill-block">
+                <h3>CSR/Leadership</h3>
+                <div class="skill-subtopic">
+                    <button class="skill-button" onclick="toggleDetails('csr-details')">CSR</button>
+                    <div id="csr-details" class="skill-details">
+                        <h4 style="font-family: 'Roboto', sans-serif;">CSR</h4>
+                        <p style="font-family: 'Roboto', sans-serif;">In 11th grade, my school organized a CSR project where we raised funds to visit a rural school in Thailand. We brought supplies and taught the children for a few days. This experience taught me valuable lessons and helped me grow as a person</p>
+                        <img src="Pictures/Yr11.jpg" alt="CSR Project">
+                    </div>
+                </div>
+                <div class="skill-subtopic">
+                    <button class="skill-button" onclick="toggleDetails('student-council-details')">Student Council</button>
+                    <div id="student-council-details" class="skill-details">
+                        <h4 style="font-family: 'Roboto', sans-serif;">Student Council</h4>
+                        <p style="font-family: 'Roboto', sans-serif;">During my last year of highschool, me and my friends established a student council to hopefully get nominated and help develop the school in various ways. Although in the end my council didn't win the voting we still gained alot of valuable experince and lessons from this participation</p>
+                        <img src="Pictures/Stupres.jpg" alt="Student Council">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Others Block -->
+            <div class="skill-block">
+                <h3>Others</h3>
+                <div class="skill-subtopic">
+                    <button class="skill-button" onclick="toggleDetails('drama-details')">Drama</button>
+                    <div id="drama-details" class="skill-details">
+                        <h4 style="font-family: 'Roboto', sans-serif;">Drama Activities</h4>
+                        <p style="font-family: 'Roboto', sans-serif;">I have been a part of my school's Drama club ever since grade 7 and have performed in over a dozen of shows. All this experince has significantly increased my english communicating skills as the shows performed were mostly in English</p>
+                        <img src="Pictures/Drama.jpg" alt="Drama Activities">
+                    </div>
+                </div>
+                <div class="skill-subtopic">
+                    <button class="skill-button" onclick="toggleDetails('sports-details')">Sports</button>
+                    <div id="sports-details" class="skill-details">
+                        <h4 style="font-family: 'Roboto', sans-serif;">Sports</h4>
+                        <p style="font-family: 'Roboto', sans-serif;">During my school sports festival I involved myself in many diffrent sport activities, most notably was the "Ektraton" race which I got 2nd place for, and the Overall Hakka where me and my team won the 1st place</p>
+                        <img src="Pictures/Sport.jpg" alt="Sports Activities">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <h2>Contact Me</h2> <!-- Added heading -->
+        <div class="contact-info">
+            <p>Email: <a href="mailto:ivanluwongsupakit@gmail.com">ivanluwongsupakit@gmail.com</a></p>
+            <p>Phone: <a href="tel:+66969548298">+66 96 954 8298</a></p>
+            <p>Instagram: <a href="https://www.instagram.com/tata_ivl"> @Tata_ivl</a></p>
+            <p>&copy; 2024 Ivan Luwongsupakit</p>
+        </div>
+    </footer>
+
+    <script>
+        function toggleDetails(id) {
+            const details = document.getElementById(id);
+            if (details.style.display === "block") {
+                details.style.display = "none"; // Hide details
+            } else {
+                details.style.display = "block"; // Show details
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,307 @@
+/* Main content styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif; /* Ensure you have a default font */
+}
+
+.landing-page {
+    height: 100vh; /* Full height of the viewport */
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    background-color: #e3f2fd; /* Light blue background, adjust as needed */
+    text-align: center; /* Center the text */
+}
+
+.landing-content h1 {
+    font-size: 2.5rem; /* Size of the heading */
+    color: #0D47A1; /* Match your theme color */
+    margin-bottom: 20px; /* Space between heading and button */
+}
+
+.button {
+    background-color: #0D47A1; /* Button color */
+    color: white; /* Button text color */
+    padding: 15px 30px; /* Padding for the button */
+    text-decoration: none; /* Remove underline */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.button:hover {
+    background-color: #1976d2; /* Darker shade on hover */
+}
+
+.main-content {
+    margin-top: 60px; /* Space for fixed navbar */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    background: #E3F2FD; /* Light background */
+}
+
+.about-me {
+    display: flex;
+    align-items: center;
+    width: 80%;
+    max-width: 1000px;
+    background: rgba(255, 255, 255, 0.6);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.profile-photo {
+    width: 40%; /* Adjust width as needed */
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+    margin-right: 20px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.description {
+    flex: 1; /* Makes the description take up the remaining space */
+    color: #0D47A1;
+}
+
+.description p {
+    margin: 0;
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+/* Navbar styles */
+/* Navbar styles */
+/* Navbar styles */
+.navbar {
+    background: #0D47A1; /* Dark blue for a solid background */
+    padding: 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px; /* Adjust height as needed */
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar ul li {
+    margin: 0 40px; /* Increased margin for more space between items */
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #FFFFFF; /* White text for contrast */
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: background 0.3s ease;
+    border-radius: 5px;
+}
+
+.navbar ul li a:hover {
+    background: #1565C0; /* Lighter blue on hover */
+}
+/* Education Section Styles */
+/* Education Section Styles */
+.education-section {
+    margin-top: 60px; /* Space for fixed navbar */
+    padding: 20px;
+    background: #E3F2FD; /* Light background */
+}
+
+.education-section h2 {
+    font-size: 2.5rem; /* Increased font size */
+    font-family: 'Arial', sans-serif; /* Change to a clean sans-serif font */
+    text-align: center; /* Center align the text */
+    color: #0D47A1; /* Use the same dark blue color */
+    margin-bottom: 40px; /* Space below the heading */
+}
+
+.education-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px; /* Space between education items */
+    background: rgba(255, 255, 255, 0.6);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.school-photo {
+    width: 150px; /* Fixed width for all images */
+    height: 100px; /* Fixed height for all images */
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+
+.school-description {
+    flex: 1; /* Makes the description take up the remaining space */
+    color: #0D47A1;
+}
+
+.school-description h3 {
+    margin: 0 0 10px; /* Space below the heading */
+}
+
+.school-description p {
+    margin: 0;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+.skills-section {
+    padding: 40px 20px; /* Added padding for better spacing */
+    background-color: #E3F2FD; /* Light blue background for the entire section */
+    text-align: center;
+}
+
+.skills-section h2 {
+    font-family: 'Arial', sans-serif; /* Ensure it uses the same font as other sections */
+    color: #0D47A1; /* Color that fits your theme */
+    margin: 20px 0; /* Adjust margin for better positioning */
+    font-size: 2.5rem; /* Increased font size for better visibility */
+}
+
+.skills-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.skill-block {
+    background-color: #ffffff; /* White background for each skill block */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 350px; /* Increased width for skill blocks */
+    margin: 10px;
+    text-align: left;
+    transition: transform 0.3s ease; /* Smooth transition for the hover effect */
+}
+
+.skill-block h3 {
+    font-family: 'Arial', sans-serif; /* Match the font */
+    color: #0D47A1; /* Use the same color for titles */
+}
+
+.skill-button {
+    background-color: #007bff; /* Blue color */
+    color: #fff;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    text-align: left;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.skill-button:hover {
+    background-color: #0056b3; /* Darker blue for hover effect */
+}
+
+.skill-details {
+    display: none; /* Initially hidden */
+    margin-top: 10px;
+    background-color: #f1f1f1; /* Light gray for details */
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.skill-details img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+/* Existing styles for skill-block */
+.skill-block {
+    background-color: #ffffff; /* White background for each skill block */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    margin: 10px;
+    text-align: left;
+    transition: transform 0.3s ease; /* Smooth transition for the hover effect */
+}
+
+.skill-block:hover {
+    transform: scale(1.05); /* Scale up slightly on hover */
+}
+
+/* Existing styles for skill-details */
+.skill-details {
+    display: none; /* Initially hidden */
+    margin-top: 10px; /* Add some space above the details */
+    background: rgba(255, 255, 255, 0.8); /* Light background for readability */
+    padding: 10px; /* Padding for inner content */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    transition: all 0.3s ease; /* Animation for smooth visibility change */
+}
+
+.skill-details.show {
+    display: block; /* Show the element when the class is added */
+    opacity: 1; /* Fade in effect */
+}
+footer {
+    background-color: #E3F2FD; /* Light blue background */
+    padding: 20px; /* Space around the content */
+    text-align: center; /* Center the text */
+    box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+footer h2 {
+    color: #0D47A1; /* Dark blue color for the heading */
+    margin-bottom: 15px; /* Space below the heading */
+}
+
+.contact-info p {
+    margin: 5px 0; /* Space between contact items */
+    color: #0D47A1; /* Use the same dark blue color */
+}
+
+.contact-info a {
+    color: #007bff; /* Link color */
+    text-decoration: none; /* Remove underline from links */
+}
+
+.contact-info a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+.social-links {
+    display: flex;
+    flex-direction: column; /* Stack each social link vertically */
+    align-items: flex-start; /* Align each link to the start */
+    gap: 10px; /* Space between each contact item */
+}
+
+.social-links a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #0D47A1; /* Adjust to your theme's color */
+}
+
+.social-links img {
+    width: 24px; /* Set a fixed width for the icons */
+    height: 24px; /* Set a fixed height for the icons */
+    margin-right: 8px; /* Space between the icon and the text */
+    border-radius: 4px; /* Optional: to slightly round the corners */
+}
